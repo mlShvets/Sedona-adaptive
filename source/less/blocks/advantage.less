@@ -1,0 +1,125 @@
+.advantage {
+  margin-bottom: 57px;
+}
+
+.advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.advantage__item {
+  min-height: 256px;
+
+  &--city {
+    display: flex;
+  }
+
+  &--bridge {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.advantage__content {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 50px 50px 30px;
+  background-color: @bluie-regular;
+  color: @white;
+}
+
+.advantage__img-wrap {
+  height: 256px;
+}
+
+.advantage__img {
+  height: 256px;
+  width: 800px;
+}
+
+.advantage__title {
+  font-size: 21px;
+  margin: 0 75px 12px;
+}
+
+.advantage__number {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.advantage__sublist {
+  display: flex;
+}
+
+.advantage__subitem {
+  min-height: 256px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 48px 50px 30px;
+}
+
+.advantage__sublist--services {
+  .advantage__title {
+    padding-top: 111px;
+    margin-bottom: 22px;
+  }
+
+  .advantage__subitem {
+    position: relative;
+    min-height: 330px;
+  }
+}
+
+.advantage__sublist--sights {
+  background-color: @gray;
+
+  .advantage__subitem {
+    padding-top: 43px;
+  }
+}
+
+.advantage__subitem--housing::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/index/icon-house.svg");
+  background-repeat: no-repeat;
+}
+
+.advantage__subitem--food::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 89px;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/index/icon-burger.svg");
+  background-repeat: no-repeat;
+}
+
+.advantage__subitem--souvenirs::after {
+  content: "";
+  position: absolute;
+  width: 63px;
+  height: 75px;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/index/icon-gift.svg");
+  background-repeat: no-repeat;
+}

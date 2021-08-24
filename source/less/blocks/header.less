@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 187px;
+  height: 97px;
+}
+
+.header__img-wrap {
+  min-height: 300px;
+  text-align: center;
+  background-repeat: no-repeat;
+
+
+  &--index {
+    min-height: 518px;
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.header__img {
+  &--index {
+    margin-top: 78px;
+    width: 460px;
+    height: 350px;
+  }
+}
