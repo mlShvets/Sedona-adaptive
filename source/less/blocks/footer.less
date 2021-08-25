@@ -3,10 +3,35 @@
   padding: 26px 120px;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: @desktop) {
+    padding: 26px 60px;
+  }
+
+  @media (max-width: @tablet) {
+    padding: 18px 20px 20px;
+    flex-direction: column;
+  }
 }
 
 .footer__hashtag {
   font-weight: bold;
   font-size: 21px;
   margin-right: 5px;
+
+  @media (max-width: @tablet) {
+    margin-bottom: 34px;
+  }
+}
+
+.footer__social {
+  @media (max-width: @tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__copyright {
+  @media (max-width: @tablet) {
+    margin-left: -15px;
+  }
 }

@@ -1,0 +1,22 @@
+.button {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: @bluie-regular;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    background-color: @blue-special;
+  }
+
+  &:active {
+    background-color: @blue-extra;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: @white;
+    background-color: @gray-extra;
+  }
+}

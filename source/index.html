@@ -17,17 +17,10 @@
 
 <body class="page__body center">
   <header class="header">
-    <a class="header__logo" href="#">
-      <picture>
-        <source media="(max-width: 767px)" srcset="img/logotype-mobile.svg">
-        <source media="(max-width: 1199px)" srcset="img/logotype-tablet.svg">
-        <img class="header__logo-img" src="img/logotype-desktop.svg" width="187" height="97" alt="Логотип сайта Sedona">
-      </picture>
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link">Главная</a>
+          <a class="main-nav__link main-nav__link--active">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="photo.html">Фото и видео</a>
@@ -39,6 +32,14 @@
           <a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a>
         </li>
       </ul>
+      <a class="header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logotype-mobile.svg">
+          <source media="(max-width: 1199px)" srcset="img/logotype-tablet.svg">
+          <img class="header__logo-img" src="img/logotype-desktop.svg" width="187" height="97" alt="Логотип сайта Sedona">
+        </picture>
+      </a>
+      <button type="button" class="main-nav__toggle" aria-label="Меню"></button>
     </nav>
     <div class="header__img-wrap header__img-wrap--index">
       <img class="header__img header__img--index" src="img/index/text-index.svg" width="460" height="350"
@@ -88,7 +89,7 @@
             </li>
             <li class="advantage__subitem advantage__subitem--souvenirs">
               <h4 class="advantage__title">Сувениры</h4>
-              <p class="advantage__text">Не только китайского, <br>но и местного производства!</p>
+              <p class="advantage__text">Не только китайского,&nbsp; <br>но и местного производства!</p>
             </li>
           </ul>
         </li>
@@ -96,7 +97,7 @@
           <div class="advantage__content">
             <h3 class="advantage__title">Там есть мост&nbsp;дьявола</h3>
             <p class="advantage__number">&mdash; №2 &mdash;</p>
-            <p class="advantage__text">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
+            <p class="advantage__text">Да, по нему можно пройти!&ensp; <br> Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantage__img-wrap">
             <picture>
@@ -140,10 +141,10 @@
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <div class="search-hotel__wrap">
         <p class="search-hotel__title">Заинтересовались?</p>
-        <p class="search-hotel__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки,&ensp;<br>и мы покажем вам лучшие предложения
           гостиниц
           в Седоне</p>
-        <a class="search-hotel__btn" href="#">Найти гостиницу</a>
+        <a class="search-hotel__btn button" href="#">Найти гостиницу</a>
       </div>
     </section>
     <section class="map">
@@ -160,21 +161,21 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Twitter">
-            <svg class="social__icon social__twitter" width="18" height="14">
+            <svg class="social__icon social__icon--twitter" width="18" height="14">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Facebook">
-            <svg class="social__icon social__facebook" width="9" height="19">
+            <svg class="social__icon social__icon--facebook" width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в YouTube">
-            <svg class="social__icon social__youtube" width="20" height="14">
+            <svg class="social__icon social__icon--youtube" width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
