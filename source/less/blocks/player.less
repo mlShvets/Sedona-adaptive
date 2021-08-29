@@ -1,0 +1,124 @@
+.player {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 93px;
+
+  @media (max-width: @tablet) {
+    bottom: -65px;
+    height: 111px;
+  }
+}
+
+.player__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  @media (max-width: @tablet) {
+    background-color: transparent;
+  }
+}
+
+.player__scale-wrap {
+  position: absolute;
+  left: 93px;
+  top: 48%;
+
+  @media (max-width: @tablet) {
+    margin: 0 20px;
+    left: 0;
+    top: 1px;
+    height: 45px;
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.player__scale {
+  position: relative;
+  width: 540px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  @media (max-width: @desktop) {
+    width: 389px;
+  }
+
+  @media (max-width: @tablet) {
+    width: 235px;
+    margin-top: 22px;
+    margin-left: 22px;
+  }
+}
+
+.player__toggle {
+  position: absolute;
+  top: 50%;
+  left: 112px;
+  width: 10px;
+  height: 10px;
+  background-color: @white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: @tablet) {
+    left: 36px;
+  }
+}
+
+.player__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 100%;
+  padding-left: 28px;
+  padding-right: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (max-width: @tablet) {
+    width: 280px;
+    height: 66px;
+    background-color: #f2f2f2;
+    margin-top: 23px;
+    margin-left: 20px;
+    padding-left: 19px;
+    padding-right: 18px;
+  }
+}
+
+.player__btn {
+  background-color: transparent;
+  border: none;
+  fill: @white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: @tablet) {
+    fill: #5c6870;
+  }
+}
+
+.player__btn--replay {
+  margin-right: 81%;
+
+  @media (max-width: @desktop) {
+    margin-right: 76%;
+  }
+
+  @media (max-width: @tablet) {
+    margin-right: 42%;
+  }
+}

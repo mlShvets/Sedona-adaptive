@@ -55,104 +55,132 @@
     <section class="photo">
       <h2 class="visually-hidden">Фотографии</h2>
       <ul class="photo__list">
-        <li class="photo__item">
-          <div class="photo__img-wrap">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/catalog/photo-1-mobile.webp, img/catalog/photo-1-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/catalog/photo-1-tablet.webp, img/catalog/photo-1-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1200px)"
-                srcset="img/catalog/photo-1-desktop.webp, img/catalog/photo-1-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/catalog/photo-1-mobile.jpg, img/catalog/photo-1-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)"
-                srcset="img/catalog/photo-1-tablet.jpg, img/catalog/photo-1-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/catalog/photo-1-desktop.jpg"
-                srcset="img/catalog/photo-1-desktop@2x.jpg 2x" alt="Фотография просторов">
-            </picture>
-          </div>
-          <div class="photo__bottom">
-            <div class="photo__discription">
-              <h3 class="photo__title">Неродные просторы</h3>
-              <p class="photo__author">Автор фото: Борис</p>
+        <li class="photo__item photo__item--popular">
+          <div class="photo__wrap">
+            <a class="photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/catalog/photo-1-mobile.webp, img/catalog/photo-1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-1-tablet.webp, img/catalog/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1200px)"
+                  srcset="img/catalog/photo-1-desktop.webp, img/catalog/photo-1-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog/photo-1-mobile.jpg, img/catalog/photo-1-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-1-tablet.jpg, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/catalog/photo-1-desktop.jpg"
+                  srcset="img/catalog/photo-1-desktop@2x.jpg 2x" alt="Фотография просторов">
+              </picture>
+            </a>
+            <div class="photo__bottom">
+              <div class="photo__discription">
+                <h3 class="photo__title">Неродные просторы</h3>
+                <p class="photo__author">Автор фото: Борис</p>
+              </div>
+              <span class="photo__like">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                1350
+              </span>
             </div>
-            <span class="photo__like">1350</span>
           </div>
         </li>
         <li class="photo__item">
-          <div class="photo__img-wrap">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/catalog/photo-2-mobile.webp, img/catalog/photo-2-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/catalog/photo-2-tablet.webp, img/catalog/photo-2-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1200px)"
-                srcset="img/catalog/photo-2-desktop.webp, img/catalog/photo-2-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/catalog/photo-2-mobile.jpg, img/catalog/photo-2-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)"
-                srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/catalog/photo-2-desktop.jpg"
-                srcset="img/catalog/photo-2-desktop@2x.jpg 2x" alt="Фотография катуса">
-            </picture>
-          </div>
-          <div class="photo__bottom">
-            <div class="photo__discription">
-              <h3 class="photo__title">Местная растительность</h3>
-              <p class="photo__author">Автор фото: Сергей</p>
+          <div class="photo__wrap">
+            <a class="photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/catalog/photo-2-mobile.webp, img/catalog/photo-2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-2-tablet.webp, img/catalog/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1200px)"
+                  srcset="img/catalog/photo-2-desktop.webp, img/catalog/photo-2-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog/photo-2-mobile.jpg, img/catalog/photo-2-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/catalog/photo-2-desktop.jpg"
+                  srcset="img/catalog/photo-2-desktop@2x.jpg 2x" alt="Фотография катуса">
+              </picture>
+            </a>
+            <div class="photo__bottom">
+              <div class="photo__discription">
+                <h3 class="photo__title">Местная растительность</h3>
+                <p class="photo__author">Автор фото: Сергей</p>
+              </div>
+              <span class="photo__like">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                143
+              </span>
             </div>
-            <span class="photo__like">143</span>
           </div>
         </li>
         <li class="photo__item">
-          <div class="photo__img-wrap">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/catalog/photo-3-mobile.webp, img/catalog/photo-3-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/catalog/photo-3-tablet.webp, img/catalog/photo-3-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1200px)"
-                srcset="img/catalog/photo-3-desktop.webp, img/catalog/photo-3-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/catalog/photo-3-mobile.jpg, img/catalog/photo-3-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)"
-                srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/catalog/photo-3-desktop.jpg"
-                srcset="img/catalog/photo-3-desktop@2x.jpg 2x" alt="Фотография дороги">
-            </picture>
-          </div>
-          <div class="photo__bottom">
-            <div class="photo__discription">
-              <h3 class="photo__title">Дорога на север</h3>
-              <p class="photo__author">Автор фото: Петр</p>
+          <div class="photo__wrap">
+            <a class="photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/catalog/photo-3-mobile.webp, img/catalog/photo-3-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-3-tablet.webp, img/catalog/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1200px)"
+                  srcset="img/catalog/photo-3-desktop.webp, img/catalog/photo-3-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog/photo-3-mobile.jpg, img/catalog/photo-3-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/catalog/photo-3-desktop.jpg"
+                  srcset="img/catalog/photo-3-desktop@2x.jpg 2x" alt="Фотография дороги">
+              </picture>
+            </a>
+            <div class="photo__bottom">
+              <div class="photo__discription">
+                <h3 class="photo__title">Дорога на север</h3>
+                <p class="photo__author">Автор фото: Петр</p>
+              </div>
+              <span class="photo__like">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                96
+              </span>
             </div>
-            <span class="photo__like">96</span>
           </div>
         </li>
         <li class="photo__item">
-          <div class="photo__img-wrap">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/catalog/photo-4-mobile.webp, img/catalog/photo-4-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)"
-                srcset="img/catalog/photo-4-tablet.webp, img/catalog/photo-4-tablet@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1200px)"
-                srcset="img/catalog/photo-4-desktop.webp, img/catalog/photo-4-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)"
-                srcset="img/catalog/photo-4-mobile.jpg, img/catalog/photo-4-mobile@2x.jpg 2x">
-              <source media="(max-width: 1199px)"
-                srcset="img/catalog/photo-4-tablet.jpg, img/catalog/photo-4-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/catalog/photo-4-desktop.jpg"
-                srcset="img/catalog/photo-4-desktop@2x.jpg 2x" alt="Фотография моста Дьявола">
-            </picture>
-          </div>
-          <div class="photo__bottom">
-            <div class="photo__discription">
-              <h3 class="photo__title">Мост дьявола</h3>
-              <p class="photo__author">Автор фото: Антон</p>
+          <div class="photo__wrap">
+            <a class="photo__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/catalog/photo-4-mobile.webp, img/catalog/photo-4-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-4-tablet.webp, img/catalog/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1200px)"
+                  srcset="img/catalog/photo-4-desktop.webp, img/catalog/photo-4-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog/photo-4-mobile.jpg, img/catalog/photo-4-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)"
+                  srcset="img/catalog/photo-4-tablet.jpg, img/catalog/photo-4-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/catalog/photo-4-desktop.jpg"
+                  srcset="img/catalog/photo-4-desktop@2x.jpg 2x" alt="Фотография моста Дьявола">
+              </picture>
+            </a>
+            <div class="photo__bottom">
+              <div class="photo__discription">
+                <h3 class="photo__title">Мост дьявола</h3>
+                <p class="photo__author">Автор фото: Антон</p>
+              </div>
+              <span class="photo__like">
+                <svg width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                254
+              </span>
             </div>
-            <span class="photo__like">254</span>
           </div>
         </li>
       </ul>
@@ -177,28 +205,35 @@
           <img class="video__preview-img" src="img/catalog/video-desktop.jpg"
             srcset="img/catalog/video-desktop@2x.jpg 2x" alt="Превью видеопрезентации">
         </picture>
-      </div>
-      <div class="player">
-        <button class="player__btn player__btn--replay" type="button">
-          <span class="visually-hidden">Повтор</span>
-          <svg width="16" height="20">
-            <use xlink:href="img/sprite.svg#icon-replay"></use>
-          </svg>
-        </button>
-        <div class="player__scale">
+        <div class="player">
+          <div class="player__wrap">
+            <div class="player__scale-wrap">
+              <div class="player__scale">
+                <div class="player__toggle" tabindex="0" aria-label="Ползунок видеоплеера"></div>
+              </div>
+            </div>
+            <div class="player__controls">
+              <button class="player__btn player__btn--replay" type="button">
+                <span class="visually-hidden">Повтор</span>
+                <svg width="16" height="20">
+                  <use xlink:href="img/sprite.svg#icon-replay"></use>
+                </svg>
+              </button>
+              <button class="player__btn player__btn--subtitles" type="button">
+                <span class="visually-hidden">Субтитры</span>
+                <svg width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                </svg>
+              </button>
+              <button class="player__btn player__btn--fullscreen" type="button">
+                <span class="visually-hidden">Полный экран</span>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <button class="player__btn player__btn--subtitles" type="button">
-          <span class="visually-hidden">Субтитры</span>
-          <svg width="32" height="20">
-            <use xlink:href="img/sprite.svg#icon-subtitles"></use>
-          </svg>
-        </button>
-        <button class="player__btn player__btn--fullscreen" type="button">
-          <span class="visually-hidden">Полный экран</span>
-          <svg width="20" height="20">
-            <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
-          </svg>
-        </button>
       </div>
     </section>
   </main>
