@@ -57,17 +57,22 @@
         <legend class="review-form__legend">Ваше общее впечатление:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
-            <input class="review-form__input" type="radio" value="positive" name="impression" id="impression-positive"
-              checked>
-            <label class="review-form__label" for="impression-positive">Скорее положительное</label>
+            <input class="review-form__input review-form__input--radio visually-hidden" type="radio" value="positive"
+              name="impression" id="impression-positive" checked>
+            <label class="review-form__label review-form__label--radio" for="impression-positive">Скорее
+              положительное</label>
           </li>
           <li class="review-form__item">
-            <input class="review-form__input" type="radio" value="negative" name="impression" id="impression-negative">
-            <label class="review-form__label" for="impression-negative">Скорее отрицательное</label>
+            <input class="review-form__input review-form__input--radio visually-hidden" type="radio" value="negative"
+              name="impression" id="impression-negative">
+            <label class="review-form__label review-form__label--radio" for="impression-negative">Скорее
+              отрицательное</label>
           </li>
           <li class="review-form__item">
-            <input class="review-form__input" type="radio" value="neutral" name="impression" id="impression-neutral">
-            <label class="review-form__label" for="impression-neutral">Затрудняюсь ответить</label>
+            <input class="review-form__input review-form__input--radio visually-hidden" type="radio" value="neutral"
+              name="impression" id="impression-neutral">
+            <label class="review-form__label review-form__label--radio" for="impression-neutral">Затрудняюсь
+              ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -76,50 +81,58 @@
         <ul class="review-form__list">
           <li class="review-form__item">
             <label class="review-form__label" for="name">Имя*:</label>
-            <input class="review-form__input" type="text" placeholder="Петр" name="name" id="name" required>
+            <input class="review-form__input review-form__input--text" type="text" placeholder="Петр" name="name"
+              id="name" required>
           </li>
           <li class="review-form__item">
             <label class="review-form__label" for="surname">Фамилия*:</label>
-            <input class="review-form__input" type="text" placeholder="Иванов" name="surname" id="surname" required>
+            <input class="review-form__input review-form__input--text" type="text" placeholder="Иванов" name="surname"
+              id="surname" required>
           </li>
           <li class="review-form__item">
             <label class="review-form__label" for="patronymic">Отчество:</label>
-            <input class="review-form__input" type="text" placeholder="Александрович" name="patronymic" id="patronymic">
+            <input class="review-form__input review-form__input--text" type="text" placeholder="Александрович"
+              name="patronymic" id="patronymic">
           </li>
         </ul>
       </fieldset>
       <fieldset class="review-form__fieldset review-form__fieldset--contact">
-        <legend class="review-form__legend">Ваше общее впечатление:</legend>
+        <legend class="review-form__legend">Контактная информация:</legend>
         <ul class="review-form__list">
-          <li class="review-form__item">
-            <label class="review-form__label" for="phone">Телефон*:</label>
-            <input class="review-form__input" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
+          <li class="review-form__item review-form__item--phone">
+            <label class="review-form__label" for="phone"><span>Контактный</span>&nbsp;телефон*:</label>
+            <input class="review-form__input review-form__input--text " type="tel" placeholder="Введите телефон"
+              name="phone" id="phone" required>
           </li>
-          <li class="review-form__item">
+          <li class="review-form__item review-form__item--email">
             <label class="review-form__label" for="email">Электронная почта*:</label>
-            <input class="review-form__input" type="email" placeholder="Введите e-mail" name="email" id="email"
-              required>
+            <input class="review-form__input review-form__input--text" type="email" placeholder="Введите e-mail"
+              name="email" id="email" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review-form__fieldset review-form__fieldset--contact">
+      <fieldset class="review-form__fieldset review-form__fieldset--places">
         <legend class="review-form__legend">Посещенные достопримечательности:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
-            <input class="review-form__input" type="checkbox" name="devil-bridge " id="devil-bridge" checked>
-            <label class="review-form__label" for="devil-bridge">Мост Дьявола</label>
+            <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox"
+              name="devil-bridge " id="devil-bridge" checked>
+            <label class="review-form__label review-form__label--checkbox" for="devil-bridge">Мост Дьявола</label>
           </li>
           <li class="review-form__item">
-            <input class="review-form__input" type="checkbox" name="mount-bell" id="mount-bell" checked>
-            <label class="review-form__label" for="mount-bell">Гора-Колокол</label>
+            <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox"
+              name="mount-bell" id="mount-bell" checked>
+            <label class="review-form__label review-form__label--checkbox" for="mount-bell">Гора-Колокол</label>
           </li>
           <li class="review-form__item">
-            <input class="review-form__input" type="checkbox" name="slide-park" id="slide-park" checked>
-            <label class="review-form__label" for="slide-park">Слайд-парк</label>
+            <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox"
+              name="slide-park" id="slide-park" checked>
+            <label class="review-form__label review-form__label--checkbox" for="slide-park">Слайд-парк</label>
           </li>
           <li class="review-form__item">
-            <input class="review-form__input" type="checkbox" name="red-rocks" id="red-rocks">
-            <label class="review-form__label" for="red-rocks">Красные скалы</label>
+            <input class="review-form__input review-form__input--checkbox visually-hidden" type="checkbox"
+              name="red-rocks" id="red-rocks">
+            <label class="review-form__label review-form__label--checkbox" for="red-rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
@@ -129,7 +142,7 @@
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <div class="review-form__bottom">
-        <button class="review-form__btn" type="submit">Отправить отзыв</button>
+        <button class="review-form__btn button" type="submit">Отправить отзыв</button>
         <p class="review-form__footnotes">* — Обязательные поля</p>
       </div>
     </form>
