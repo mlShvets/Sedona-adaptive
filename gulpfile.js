@@ -14,6 +14,8 @@ const svgstore = require('gulp-svgstore');
 const del = require('del');
 const sync = require('browser-sync').create();
 const combineMq = require('gulp-group-css-media-queries');
+const ghPages = require('gh-pages');
+const path = require('path');
 
 // Styles
 
@@ -148,6 +150,13 @@ const combine = () => gulp.src('build/css/style.min.css')
   .pipe(gulp.dest('build/css'));
 
 exports.combine = combine;
+
+// Deploy
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), 'build'), cb);
+}
+exports.deploy = deploy;
 
 // Build
 
